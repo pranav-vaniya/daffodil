@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>daffodil</title>
-		<meta name="theme-color" content="#bf8b16" />
+		<meta name="theme-color" content="#ffffff" />
 		<link rel="manifest" href="manifest.webmanifest" />
 		<link rel="icon" href="icons/icon-512.png" />
 		<link href="styles.css" rel="stylesheet" />
@@ -14,12 +14,19 @@
 	<body>
 		<div class="main-container">
 			<div class="time-select-container">
-				<button type="button">3 min</button>
-				<button type="button">5 min</button>
-				<button type="button">10 min</button>
-				<button type="button">30 min</button>
-				<input type="text" placeholder="60" value="60" id="user-time-input" />
-				<button type="button">Start</button>
+				<button type="button" class="time-option-button">3 min</button>
+				<button type="button" class="time-option-button">5 min</button>
+				<button type="button" class="time-option-button">10 min</button>
+				<button type="button" class="time-option-button">30 min</button>
+				<div class="custom-time-selector">
+					<input type="text" placeholder="Custom" id="user-time-input" class="time-option-input" />
+					<select class="time-option-select">
+						<option value="m">mins</option>
+						<option value="h">hours</option>
+						<option value="d">days</option>
+					</select>
+				</div>
+				<button type="button" class="time-option-button" id="time-input-start-button">Start</button>
 			</div>
 		</div>
 

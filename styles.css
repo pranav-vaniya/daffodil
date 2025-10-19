@@ -28,4 +28,50 @@
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
+	margin: 0px 32px;
+	max-width: 225px;
+}
+
+.custom-time-selector {
+	display: flex;
+	flex-direction: row;
+	max-width: 225px;
+}
+
+.time-option-button {
+	border-radius: 8px;
+	border: none;
+	padding: 8px 8px;
+	background-color: #e3e3e3;
+}
+
+.time-option-input {
+	border-radius: 0px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	text-align: center;
+	border: none;
+	background-color: #e3e3e3;
+	padding: 8px 8px;
+	width: 150px;
+}
+
+.time-option-input:focus {
+	outline: none;
+}
+
+.time-option-select {
+	border-radius: 0px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
+	background-color: #e3e3e3;
+}
+
+.time-option-select:focus {
+	outline: none;
+}
+
+#time-input-start-button {
+	background-color: lightgreen;
 }
