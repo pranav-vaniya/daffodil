@@ -5,10 +5,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>daffodil</title>
+		<meta name="theme-color" content="#bf8b16" />
+		<link rel="manifest" href="manifest.webmanifest" />
+		<link rel="icon" href="icons/icon-512.png" />
 		<link href="styles.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<div class="main-container">daffodil</div>
+		<div class="main-container">
+			<div class="time-select-container">
+				<button type="button">3 min</button>
+				<button type="button">5 min</button>
+				<button type="button">10 min</button>
+				<button type="button">30 min</button>
+				<input type="text" placeholder="60" value="60" id="user-time-input" />
+				<button type="button">Start</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
 	</body>
 </html>
