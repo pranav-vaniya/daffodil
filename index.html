@@ -14,16 +14,39 @@
 	<body>
 		<div class="main-container">
 			<div class="time-select-container">
+				<div class="daffodil-title">daffodil</div>
 				<div class="time-select-button-container">
-					<button type="button" class="time-select-option-button">3</button>
-					<button type="button" class="time-select-option-button">5</button>
-					<button type="button" class="time-select-option-button">10</button>
-					<button type="button" class="time-select-option-button">30</button>
+					<button type="button" class="time-select-option-button" onclick="setClock(3 * 60);">3</button>
+					<button type="button" class="time-select-option-button" onclick="setClock(5 * 60);">5</button>
+					<button type="button" class="time-select-option-button" onclick="setClock(10 * 60);">10</button>
+					<button type="button" class="time-select-option-button" onclick="setClock(30 * 60);">30</button>
 				</div>
 				<div class="time-select-input-container">
 					<input type="number" class="time-select-user-input" placeholder="Custom" />
 					<button type="button" class="time-select-user-button">Let's Play</button>
 				</div>
+			</div>
+			<div class="clock-container">
+				<div class="player-clock">
+					<span class="player-1-remaining-time">10.00</span>
+				</div>
+				<div class="clock-settings-container">
+					<button class="clock-action-pause">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#016b61"><path d="M560-200v-560h160v560H560Zm-320 0v-560h160v560H240Z" /></svg>
+					</button>
+					<button class="clock-action-play">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#016b61"><path d="M320-200v-560l440 280-440 280Z" /></svg>
+					</button>
+					<button class="clock-action-restart">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#016b61">
+							<path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z" />
+						</svg>
+					</button>
+					<button class="clock-action-reset">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#016b61"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg>
+					</button>
+				</div>
+				<div class="player-clock"><span class="player-2-remaining-time">10.00</span></div>
 			</div>
 		</div>
 
