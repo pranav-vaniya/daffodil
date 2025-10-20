@@ -17,7 +17,6 @@
 
 .main-container {
 	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -28,50 +27,53 @@
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
-	margin: 0px 32px;
-	max-width: 225px;
 }
 
-.custom-time-selector {
+.time-select-button-container {
 	display: flex;
 	flex-direction: row;
-	max-width: 225px;
+	gap: 4px;
+	justify-content: space-between;
 }
 
-.time-option-button {
-	border-radius: 8px;
+.time-select-button-container button {
+	flex: 1;
+	background-color: #e5e9c5;
 	border: none;
-	padding: 8px 8px;
-	background-color: #e3e3e3;
+	border-radius: 4px;
+	padding: 0px 4px;
+	height: 32px;
+	line-height: 1.2;
+	font-family: "JetBrains Mono";
+	font-size: 16px;
+	color: #016b61;
 }
 
-.time-option-input {
-	border-radius: 0px;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+.time-select-input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.time-select-user-input {
+	border: 1px solid #e5e9c5;
+	color: #016b61;
 	text-align: center;
-	border: none;
-	background-color: #e3e3e3;
-	padding: 8px 8px;
-	width: 150px;
+	height: 32px;
+	font-size: 16px;
+	width: 240px;
+	border-radius: 4px;
 }
 
-.time-option-input:focus {
+.time-select-user-input:focus {
 	outline: none;
 }
 
-.time-option-select {
-	border-radius: 0px;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+.time-select-user-button {
 	border: none;
-	background-color: #e3e3e3;
-}
-
-.time-option-select:focus {
-	outline: none;
-}
-
-#time-input-start-button {
-	background-color: lightgreen;
+	height: 32px;
+	background-color: #e5e9c5;
+	color: #016b61;
+	border-radius: 4px;
+	font-size: 16px;
 }
